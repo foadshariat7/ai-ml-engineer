@@ -14,7 +14,7 @@
 -  ✅ Mutable vs immutable objects 
 -  ✅ Shallow copy 
 -  ✅ Deep copy 
--  Python memory model 
+-  ✅ Python memory model 
 -  Variables and scope 
 -  LEGB rule 
 -  Basic data types 

@@ -1,4 +1,4 @@
-"""Homework 01: Mutability and copying.
+"""Homework 02: Mutability and copying.
 
 Implement each function below according to its docstring. Do not change
 any function signatures. Replace the `...` placeholder in each function

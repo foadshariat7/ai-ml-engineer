@@ -1,17 +1,17 @@
-# Tests for Homework 01
+# Tests for Homework 02
 
-This document explains what [`test_hw01.py`](test_hw01.py) needs to
+This document explains what [`test_hw02.py`](test_hw02.py) needs to
 verify. The file is currently empty — write `pytest` test functions that
-import each function from `notes/hw01.py` and check both its return
+import each function from `notes/hw02.py` and check both its return
 value and its mutation contract (whether it changes its input or not).
 
 <div dir="rtl" align="right">
 
 ## تست‌های تمرین ۱
 
-این سند توضیح می‌دهد که فایل [`test_hw01.py`](test_hw01.py) باید چه چیزی
+این سند توضیح می‌دهد که فایل [`test_hw02.py`](test_hw02.py) باید چه چیزی
 را بررسی کند. این فایل در حال حاضر خالی است — توابع تست `pytest` بنویسید
-که هر تابع را از `notes/hw01.py` وارد (import) کرده و هم مقدار
+که هر تابع را از `notes/hw02.py` وارد (import) کرده و هم مقدار
 بازگشتی و هم قرارداد تغییرپذیری (mutation contract) آن (اینکه آیا ورودی
 را تغییر می‌دهد یا نه) را بررسی کنند.
 
