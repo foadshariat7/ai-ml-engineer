@@ -1,14 +1,14 @@
-# Self-Test 02: Dictionary Semantics
+# Self-Test 04: Dictionary Semantics
 
 This document explains the six exercises in
-[`02_self_test.py`](02_self_test.py): key collisions, truthiness, `None` vs.
+[`04_self_test.py`](04_self_test.py): key collisions, truthiness, `None` vs.
 missing keys, booleans as numbers, and hashable keys.
 
 <div dir="rtl" align="right">
 
-## خودآزمون ۲: رفتار دیکشنری‌ها (Dictionary Semantics)
+## خودآزمون ۴: رفتار دیکشنری‌ها (Dictionary Semantics)
 
-این سند شش تمرین موجود در فایل [`02_self_test.py`](02_self_test.py) را توضیح
+این سند شش تمرین موجود در فایل [`04_self_test.py`](04_self_test.py) را توضیح
 می‌دهد: برخورد کلیدهای تکراری، truthiness، تفاوت `None` با کلید غایب، بولین‌ها
 به‌عنوان عدد، و کلیدهای hashable.
 

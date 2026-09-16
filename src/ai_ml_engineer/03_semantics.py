@@ -1,4 +1,3 @@
-import math
 
 # #1
 # def calculate():

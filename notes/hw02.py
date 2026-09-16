@@ -5,7 +5,7 @@ any function signatures. Replace the `...` placeholder in each function
 body with your implementation.
 """
 
-from typing import Sequence
+from collections.abc import Sequence
 
 
 def add_loss(

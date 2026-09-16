@@ -91,6 +91,7 @@ def show(label, value):
 
 print("Example 8: Assignment, Shallow copy and Deep copy")
 from copy import deepcopy
+
 original = [
     ["sample-1", "sample-2"],
     ["sample-3"],

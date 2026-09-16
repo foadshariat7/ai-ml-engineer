@@ -15,23 +15,23 @@
 -  ✅ Shallow copy 
 -  ✅ Deep copy 
 -  ✅ Python memory model 
--  Variables and scope 
--  LEGB rule 
--  Basic data types 
--  Numbers 
--  Strings 
--  Booleans 
-- `None` 
--  Operators 
--  Conditions 
--  Loops 
+-  ✅ Variables and scope 
+-  ✅ LEGB rule 
+-  ✅ Basic data types 
+-  ✅ Numbers 
+-  ✅ Strings 
+-  ✅ Booleans 
+-  ✅ `None` 
+-  ✅ Operators 
+-  ✅ Conditions 
+-  ✅ Loops 
 
 ### Python Data Structures
 
--  Lists 
--  Tuples 
--  Sets 
--  Dictionaries 
+-  ✅ Lists 
+-  ✅ Tuples 
+-  ✅ Sets 
+-  ✅ Dictionaries 
 -  Comprehensions 
 -  Nested data structures 
 -  Slicing 

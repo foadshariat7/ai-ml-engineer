@@ -19,3 +19,33 @@ dev = [
     "pytest>=9.1.1",
     "ruff>=0.16.4",
 ]
+
+[tool.pytest.ini_options]
+# Tests import from top-level dirs (`extra/`, `notes/`) that sit outside src/,
+# so the repo root must be importable.
+pythonpath = ["."]
+# Only `test_*.py` are real tests. The `src/self-tests/*_self_test.py` lesson
+# scripts match pytest's default `*_test.py` glob but raise on purpose at
+# import time, which breaks collection for the whole suite.
+python_files = ["test_*.py"]
+
+[tool.pyright]
+# Deliberate broken-code exercise ("identify at least eight defects"), so its
+# type errors are the assignment rather than something to fix.
+exclude = ["**/__pycache__", "**/.venv", "notes/_04_debugging.py"]
+
+[tool.ruff.lint]
+# EXE002 is ignored because this project lives on an SMB mount, where macOS
+# always reports files as executable regardless of chmod.
+ignore = ["EXE002"]
+
+[tool.ruff.lint.per-file-ignores]
+# Numbered lesson filenames are intentional and never imported as modules.
+"src/ai_ml_engineer/0*.py" = ["N999"]
+# Self-test scripts demonstrate anti-patterns on purpose: a mutable default
+# argument, `"" and ...`, and a loop `else` with no `break`.
+"src/self-tests/*.py" = ["N999", "B006", "SIM223", "PLW0120"]
+# Homework skeletons keep `...` as the "implement me" placeholder, and their
+# test stubs import names that stay unused until the bodies are written.
+"notes/hw*.py" = ["PIE790"]
+"tests/test_hw*.py" = ["PIE790", "F401"]
