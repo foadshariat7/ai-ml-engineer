@@ -9,31 +9,35 @@ fruits = ["apple", "banana", "orange", "mango"]
 # list of lists
 # matrix = [ [1, 2], [3, 4], [5, 6] ]
 
-# len(fruits)
+# print(len(fruits))
 # last_index = len(fruits) - 1
+# print(last_index)
 
 # fruits.append("kiwi")
 # fruits.extend(["watermelon", "peach"]) # adds multiple elements
 # fruits.insert(1, "cherry")
 
-# print(fruits)
-
 # fruits.remove("banana")
 
-# fruits.pop() # removes the last element
-# fruits.pop(2) # removes the index
+# poped_element = fruits.pop() # removes the last element
+# poped_element = fruits.pop(2) # removes the index
+# print(poped_element)
 
 # del fruits[1:3]
+# print(fruits)
 
 # # iterate with index
 # for index, name in enumerate(fruits):
 #     print(index, name)
 
 # fruits.sort()
+# print(fruits)
 
 # # reversing
 # fruits.reverse() # mutate version
 # reversed_fruits = fruits[::-1] # non-mutate version
+# print(fruits)
+# print(reversed_fruits)
 
 # An empty list is falsy:
 
@@ -41,6 +45,8 @@ fruits = ["apple", "banana", "orange", "mango"]
 
 # if not items:
 #     print("Empty")
+# else:
+#     print("not empty")
 
 
 # # 2 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 
@@ -53,8 +59,9 @@ fruits = ["apple", "banana", "orange", "mango"]
 # model_key.pop()
 
 # data = ([1, 2], "test")
-# data[0] = [5, 6]   # Error
+# # data[0] = [5, 6]   # Error
 # data[0].append(3)
+# print(data)
 
 # # B: Position has a defined meaning
 # coordinates = (47.6, -122.3) # x, y
@@ -63,11 +70,6 @@ fruits = ["apple", "banana", "orange", "mango"]
 
 # # C: The object should sometimes be usable as a dictionary key
 # # Dictionary keys must be hashable
-# users = {}
-
-# users["Foad"] = 100
-# users[42] = "something"
-
 # models = {
 #     ("sentiment-model", 3): "ready",
 #     ("sentiment-model", 4): "training",
@@ -78,7 +80,8 @@ fruits = ["apple", "banana", "orange", "mango"]
 #     (40.7, -74.0): "New York",
 # }
 
-# locations[[47.6, -122.3]] = "Seattle"
+# locations[(47.6, -122.3)] = "Seattle1"
+# print(locations)
 
 # # Disctionary keys should be hashable, ex: lists are not hashable
 # # TypeError: unhashable type: 'list'
@@ -89,12 +92,13 @@ fruits = ["apple", "banana", "orange", "mango"]
 # loc_2 = {
 #     ("model", "loaded"): 1
 # }
+# print(loc_2)
 
 # # 3 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 
 # # Set example
 # unique_users = {"u1", "u2", "u3"}
 
-# # A: Uniqueness
+# # # A: Uniqueness
 # numbers = {1, 2, 2, 3, 3, 3}
 # print(numbers)
 
@@ -149,11 +153,11 @@ fruits = ["apple", "banana", "orange", "mango"]
 # users.discard("u100") # No error if element doesn't exist
 
 # # G: Union
-# backend_users = {"u1", "u2", "u3"}
-# frontend_users = {"u3", "u4", "u5"}
+backend_users = {"u1", "u2", "u3"}
+frontend_users = {"u3", "u4", "u5"}
 
-# # two approaches
-# all_users = backend_users | frontend_users
+# # # two approaches
+# # all_users = backend_users | frontend_users
 # all_users = backend_users.union(frontend_users)
 # print("Union: ", all_users) # {"u1", "u2", "u3", "u4", "u5"}
 
@@ -176,8 +180,8 @@ fruits = ["apple", "banana", "orange", "mango"]
 # print("Symmetric difference: ", s_diff)
 
 # # K: Subsets
-# admins = {"Foad", "Rezvan"}
-# users = {"Foad", "Rezvan", "Bob", "Jack"}
+admins = {"Foad", "Rezvan"}
+users = {"Foad", "Rezvan", "Bob", "Jack"}
 
 # print("Is admin subset of users? ", admins.issubset(users))
 # print("Is admin subset of users? ", admins <= users)
@@ -197,7 +201,7 @@ fruits = ["apple", "banana", "orange", "mango"]
 # # N: Create new set
 # # {} doesn't create empty set
 # wrong_new_set = {} # not a set, it's dictionary
-# print(type(new_set).__name__)
+# print(type(wrong_new_set).__name__)
 
 # new_set = set() # creates new set
 # print(type(new_set).__name__)
@@ -261,10 +265,10 @@ fruits = ["apple", "banana", "orange", "mango"]
 # # ─────        ─────
 # # "u1"    →     0.8
 # # "u2"    →     0.4
-# scores_by_user = {
-#     "u1": 0.8,
-#     "u2": 0.4,
-# }
+scores_by_user = {
+    "u1": 0.8,
+    "u2": 0.4,
+}
 # print(scores_by_user["u1"])
 
 # # A: Access a key → .get() versus []
@@ -309,6 +313,7 @@ fruits = ["apple", "banana", "orange", "mango"]
 
 # D: Update a value
 # various_keys["name"] = "Shariat"
+# print(various_keys)
 
 # E: Update multiple
 # person = {
@@ -324,11 +329,11 @@ fruits = ["apple", "banana", "orange", "mango"]
 # print(person)
 
 # F: Remove item del, pop(), popitem()
-# person = {
-#     "name": "Foad",
-#     "age": 46,
-#     "city": "Everett"
-# }
+person = {
+    "name": "Foad",
+    "age": 46,
+    "city": "Everett"
+}
 
 # del person["age"]
 # del person["email"] # raises KeyError
@@ -342,6 +347,7 @@ fruits = ["apple", "banana", "orange", "mango"]
 # item = person.popitem() # pops the last item in the dictionary
 
 # print(item)
+# print(person)
 
 # Keep in mind dictionary changes size during iteration
 # data = {
@@ -358,17 +364,25 @@ fruits = ["apple", "banana", "orange", "mango"]
 # When you add or delete keys, 
 # Python may need to change internal bookkeeping associated with that hash table
 
+# print(list(data))
+
 # Better with snapshot
 # for key in list(data):
 #     if data[key] < 3:
 #         del data[key]
+# print(data)
 
-# Best with comprehension
+# print(data.items())
+# print(type(data.items()).__name__)
+
+# # Best with comprehension
 # data = {
 #     key: value
+#     # unpacking
 #     for key, value in data.items()
 #     if value >= 3
 # }
+# print(data)
 
 # # G: Clear the dictionary
 # person.clear()
@@ -377,9 +391,10 @@ fruits = ["apple", "banana", "orange", "mango"]
 # # del vs clear()
 # person.clear() # keeps the dictionary {}
 # del person # removes the name binding
+# print(person)
 
 # # Check if key exists
-# print("city" in person)
+# print("email" in person)
 
 # Check if value exists
 # print("Foad" in person.values())
@@ -397,11 +412,12 @@ fruits = ["apple", "banana", "orange", "mango"]
 #     print(item)
     
 
-# H: Get all the items
+# # H: Get all the items
 # person = {
 #     "name": "Foad",
 #     "age": 46
 # }
+# print(person.items())
 
 # # Genrates tuples - Extremely useful 
 # for item in person.items():
@@ -413,16 +429,16 @@ fruits = ["apple", "banana", "orange", "mango"]
 
 # I: setdefault()
 # Creates key if not exists with a default value
-# students = [
-#     ("Foad", "Python"),
-#     ("Koroush", "Java"),
-#     ("Rezvan", "Python")
-# ]
+students = [
+    ("Foad", "Python"),
+    ("Koroush", "Java"),
+    ("Rezvan", "Python")
+]
 
-# groups = {}
+groups = {}
 
-# for name, language in students:
-#     groups.setdefault(language, []).append(name)
+for name, language in students:
+    groups.setdefault(language, []).append(name)
 
-# print(groups)
+print(groups)
 

@@ -3,7 +3,6 @@
 import math
 from collections.abc import Iterable, Mapping
 
-
 def _require_non_empty_text(
     value: object,
     *,
@@ -18,6 +17,13 @@ def _require_non_empty_text(
 
     return value
 
+services = [
+    {"service": "auth", "latency_ms": 120},
+    {"service": "auth", "latency_ms": 80},
+    {"service": "auth", "latency_ms": 0},
+    {"service": "payments", "latency_ms": 200},
+    {"service": "payments", "latency_ms": None},
+]
 
 def average_latency_by_service(
     records: Iterable[Mapping[str, object]],
@@ -84,6 +90,8 @@ def average_latency_by_service(
         service: totals[service] / counts[service]
         for service in totals
     }
+
+print(average_latency_by_service(services))
     
 # Tradeoffs and alternatives:
 
@@ -92,8 +100,6 @@ def average_latency_by_service(
 # counts: dict[str, int]
 
 # Advantages:
-# explicit
-# easy to teach
 # low memory
 # directly represents the mathematics
 
