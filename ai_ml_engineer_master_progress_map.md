@@ -31,7 +31,8 @@
 -  ✅ Lists 
 -  ✅ Tuples 
 -  ✅ Sets 
--  ✅ Dictionaries 
+-  ✅ Dictionaries
+-  ✅ Big O
 -  Comprehensions 
 -  Nested data structures 
 -  Slicing 
