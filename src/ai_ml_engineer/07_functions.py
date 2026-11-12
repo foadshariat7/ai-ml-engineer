@@ -46,8 +46,8 @@
 
 # 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 
 # Assign names to functions
-def square(value):
-    return value * value
+# def square(value):
+#     return value * value
 
 # operation = square
 
@@ -61,20 +61,26 @@ def square(value):
 #     abs,
 # ]
 
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
 
-def multiply(a, b):
-    return a * b
+# def multiply(a, b):
+#     return a * b
 
 
-operations = {
-    "add": add,
-    "multiply": multiply,
-}
+# operations = {
+#     "add": add,
+#     "multiply": multiply,
+# }
 
-print(operations["multiply"](3, 4))
+# print(operations["multiply"](3, 4))
+# 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 
+# How to read the parameter information
+# def sorted(iterable: list[str] | tuple[str], /, element: str, *, key: str | None=None, reverse=False) -> int:
+#     print(iterable, element, key, reverse)
+#     return 0
+
 # 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 
 # Higher-Order Functions
 # A higher-order function is a function that:
@@ -96,7 +102,7 @@ print(operations["multiply"](3, 4))
 
 # print(apply_to_all([2,3,4], square))
 
-# AI/ML apllication
+# AI/ML application
     # loss functions
     # activation functions
     # metrics
@@ -153,39 +159,38 @@ print(operations["multiply"](3, 4))
 # print(functions[2]())
 
 # # ex:
-# buttons = ["Start", "Stop", "Reset"]
-# callbacks = []
+# def create_callbacks():
+#     buttons = ["Start", "Stop", "Reset"]
+#     callbacks = []
 
-# # trap
-# for button in buttons:
-#     def on_click():
-#         print(f"{button} clicked")
+#     for button in buttons:
+#         # def on_click():            # trap
+#         def on_click(button=button): # fix
+#             print(f"{button} clicked")
 
-#     callbacks.append(on_click)
-    
-# # fix
-# callbacks = []
+#         callbacks.append(on_click)
 
-# for button in buttons:
-#     def on_click(button=button):
-#         print(f"{button} clicked")
+#     return callbacks
 
-#     callbacks.append(on_click)
 
-# print(callbacks[0]())
-# # expect: Start clicked
-# # output: Reset clicked
+# callbacks = create_callbacks()
 
-# print(callbacks[1]())
-# # expect: Stop clicked
-# # output: Reset clicked
+# for callback in callbacks:
+#     print(callback())
 
-# print(callbacks[2]())
-# # expect: Reset clicked
-# # output: Reset clicked
 
 # 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 
 # Stateful closures
+
+# regular function
+# def counter():
+#     count = 0
+#     count += 1
+#     return count
+
+# print(counter())  # 1
+# print(counter())  # 1
+# print(counter())  # 1
 
 # def make_counter():
 #     count = 0
@@ -226,8 +231,8 @@ print(operations["multiply"](3, 4))
 #         # items.append(item)
         
 #         # needs nonlocal because we are rebinding
-#         # nonlocal items
-#         # items = items + [item]
+#         nonlocal items
+#         items = items + [item]
         
 #         return items
 
@@ -288,8 +293,8 @@ print(operations["multiply"](3, 4))
 # def square(x):
 #     return x * x
 
-# square = lambda x: x * x
-# print(square(5))
+# square_lambda = lambda x: x * x
+# print(square_lambda(5))
 
 # records = [
 #     {"name": "a", "score": 0.7},
@@ -312,7 +317,7 @@ print(operations["multiply"](3, 4))
 # # with default value
 # for value in range(3):
 #     functions.append(
-#         lambda value=value: value
+#         lambda v=value: v
 #     )
 
 # print([function() for function in functions])
@@ -349,13 +354,3 @@ print(operations["multiply"](3, 4))
 #     return n * factorial(n - 1)
 
 # print(factorial(5))
-
-# 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 🟡 
-# Performance & Memory
-# Function calls have overhead
-# A function call requires Python to:
-    # - bind arguments;
-    # - establish execution state;
-    # - execute the body;
-    # - return.
-

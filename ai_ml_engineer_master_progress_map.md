@@ -33,30 +33,30 @@
 -  ✅ Sets 
 -  ✅ Dictionaries
 -  ✅ Big O
--  Comprehensions 
--  Nested data structures 
--  Slicing 
--  Unpacking 
--  Iterable vs iterator 
--  Memory and performance implications 
+-  ✅ Comprehensions 
+-  ✅ Nested data structures 
+-  ✅ Slicing 
+-  ✅ Unpacking 
+-  ✅ Iterable vs iterator 
+-  ✅ Memory and performance implications 
 
 ### Functions
 
--  Function definition 
--  Parameters 
--  Arguments 
--  Positional arguments 
--  Keyword arguments 
--  Default arguments 
--  Mutable default argument problem 
-- `*args` 
-- `**kwargs` 
--  Return values 
--  First-class functions 
--  Higher-order functions 
--  Closures 
--  Lambda expressions 
--  Recursion 
+-  ✅ Function definition 
+-  ✅ Parameters 
+-  ✅ Arguments 
+-  ✅ Positional arguments 
+-  ✅ Keyword arguments 
+-  ✅ Default arguments 
+-  ✅ Mutable default argument problem 
+-  ✅ `*args` 
+-  ✅ `**kwargs` 
+-  ✅ Return values 
+-  ✅ First-class functions 
+-  ✅ Higher-order functions 
+-  ✅ Closures 
+-  ✅ Lambda expressions 
+-  ✅ Recursion 
 
 ### Python Object Model
 
